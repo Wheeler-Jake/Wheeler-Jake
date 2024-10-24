@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Wheeler - CPA & Entrepreneur</title>
+    <style>
+        /* Existing base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Enhanced Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Spotify Player */
+        .spotify-player {
+            margin-left: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #1DB954;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .spotify-player:hover {
+            transform: scale(1.05);
+        }
+
+        .spotify-player img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .spotify-player a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(52, 152, 219, 0.2) 0%, transparent 50%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .name-highlight {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            transition: all 0.5s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        .name-highlight:hover {
+            transform: translateY(-5px) rotate(2deg);
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .name-highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .name-highlight:hover::after {
+            width: 100%;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards 0.5s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Existing section styles */
+        section {
+            padding: 5rem 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Enhanced card animations */
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+        }
+
+        /* Rest of your existing styles remain the same */
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="spotify-player">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Icon_RGB_White.png" alt="Spotify">
+            <a href="https://open.spotify.com/user/YOUR_USERNAME" target="_blank">Listen Along</a>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#business">Business</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Rest of your HTML remains the same -->
+    <section id="home" class="hero">
+        <h1 class="name-highlight">Jacob Wheeler</h1>
+        <p class="subtitle">CPA • Entrepreneur • Surfer</p>
+    </section>
+
+    <!-- Your existing sections remain unchanged -->
+    
+</body>
+</html>
